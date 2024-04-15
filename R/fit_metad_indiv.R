@@ -66,7 +66,7 @@ fit_metad_indiv <- function (nR_S1, nR_S2) {
   
   ## Model using JAGS
   # Create and update model
-  model <- jags.model(file = "https://github.com/kitdouble/Hmetad/blob/main/R/Bayes_metad_indiv_R.txt?raw=TRUE", data = data,
+  model <- jags.model(file = "https://github.com/kitdouble/Hmetad/blob/main/R/Bayes_metad_indiv_R.txt", data = data,
                       n.chains = 3, quiet=FALSE)
   update(model, n.iter=1000)
   
